@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+.container {
+    justify-self: center;
+    border: 5px solid salmon;
+    padding: 10px;
+}
+
+.display {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 32px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.num {
+    font-size: 32px;
+    padding: 5px 10px 5px 10px;
+}
+
+button {
+    height: 80px;
+    width: 80px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.equals {
+    flex: 1;
+}
+
+.delete,
+.back {
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+.equals,
+.operate {
+    border: 5px solid green;
+    border-radius: 5px;
+}
+
+.display,
+.num,
+.decimal {
+    border: 5px solid navy;
+    border-radius: 5px;
+}
