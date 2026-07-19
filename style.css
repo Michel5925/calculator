@@ -2,19 +2,36 @@ body {
     margin: 0;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
-    justify-self: center;
-    border: 5px solid salmon;
+    width: 360px;
+    border: 5px solid;
     padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: black;
 }
 
 .display {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
+    height: 70px;
     box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
     font-size: 32px;
-    text-align: right;
     margin-bottom: 10px;
+    background-color: white;
+    border-color: white;
 }
 
 .num {
@@ -38,21 +55,60 @@ button {
     flex: 1;
 }
 
-.delete,
-.back {
-    border: 5px solid red;
-    border-radius: 5px;
-}
-
 .equals,
 .operate {
     border: 5px solid green;
-    border-radius: 5px;
+    background-color: green;
+    font-size: 32px;
+}
+
+.num,
+.decimal {
+    border: 5px solid navy;
+}
+
+.num,
+.decimal {
+    background-color: navy;
 }
 
 .display,
 .num,
-.decimal {
-    border: 5px solid navy;
+.decimal,
+.equals,
+.operate,
+.delete,
+.back {
     border-radius: 5px;
+    font-size: 40px;
+}
+
+.num,
+.decimal,
+.equals,
+.operate,
+.delete,
+.back {
+    color: white;
+}
+
+button:hover {
+    opacity: 0.5;
+    
+}
+
+.delete {
+    width: 75px;
+}
+
+.delete,
+.back {
+    border: 5px solid orange;
+    background-color: orange;
+    font-size: 32px;
+}
+
+h1,
+h3 {
+    margin-bottom: 5px;
 }
